@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunlu.textdemo.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+
+        >
+    <Button
+        android:onClick="requestHttp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击"
+        />
+
+    <Button
+        android:onClick="send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送通知"
+        />
+    <Button
+        android:onClick="cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消通知"
+        />
+
+    <Button
+        android:onClick="createDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开对话框"
+        />
+
+    <Button
+        android:id="@+id/btn_pop"
+        android:onClick="createPopupWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PopupWindow"
+        />
+
+    <Button
+        android:onClick="createDatePickerDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PickerDialog"
+        />
+
+    <Button
+        android:onClick="createTimePickerDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TimePickerDialog"
+        />
+    <Button
+        android:onClick="getConfiguration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取系统设置"
+        />
+
+        <Button
+            android:onClick="getPermission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取读取联系人权限"
+            />
+        <Button
+            android:onClick="toActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳转"
+            />
+        <Button
+            android:onClick="getAvailableProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取cpu的核数"
+            />
+
+        <Button
+            android:onClick="goToCanvasActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳转自定义View"
+            />
+        <Button
+            android:onClick="startSevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启服务"
+            />
+        <Button
+            android:onClick="stopSevice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭服务"
+            />
+        <Button
+            android:onClick="getCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取数据"
+            />
+        <Button
+            android:onClick="gotoSecondAcivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳转注解、反射"
+            />
+
+        <Button
+            android:onClick="gotoFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跳转Fragment"
+            />
+        <Button
+            android:onClick="sendBroadcastWithPerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送自定义权限的广播"
+            />
+        <Button
+            android:onClick="serializableTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="测试对象序列化"
+            />
+
+        <Button
+            android:onClick="wirte2Sdcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="写入SD卡"
+            />
+
+    </LinearLayout>
+</ScrollView>

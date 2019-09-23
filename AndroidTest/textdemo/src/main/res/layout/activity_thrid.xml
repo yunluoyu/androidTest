@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yunlu.textdemo.ThridActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+         <RadioButton
+             android:id="@+id/rb_1"
+             android:layout_width="0dp"
+             android:textSize="24sp"
+             android:layout_weight="1"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp"
+             android:background="@drawable/btn_selector"
+             android:layout_height="wrap_content"
+             android:text="点击"
+             android:textColor="#190aef"
+             android:button="@null"
+             android:gravity="center"
+             />
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="0dp"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+             android:background="@drawable/btn_selector"
+            android:layout_weight="1"
+            android:button="@null"
+            android:textColor="#190aef"
+            android:gravity="center"
+            android:text="双击"
+            />
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textSize="24sp"
+            android:textColor="#190aef"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:button="@null"
+             android:background="@drawable/btn_selector"
+            android:layout_height="wrap_content"
+            android:text="点赞"
+            />
+    </RadioGroup>
+
+</LinearLayout>
