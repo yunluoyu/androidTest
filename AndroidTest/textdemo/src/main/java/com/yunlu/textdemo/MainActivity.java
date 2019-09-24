@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         Log.d("AAA","onCreate");
         if(savedInstanceState != null){
             Toast.makeText(MainActivity.this,savedInstanceState.getString("peng"),Toast.LENGTH_SHORT).show();
-
         }
 
 
@@ -457,5 +456,10 @@ public class MainActivity extends AppCompatActivity {
         requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},0x123);
 
 
+    }
+
+    public void gotoURL(View view) {
+        Intent intent = new Intent(this,URLActivity.class);
+        startActivity(intent);
     }
 }

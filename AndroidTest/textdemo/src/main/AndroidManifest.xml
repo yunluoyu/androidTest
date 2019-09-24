@@ -10,18 +10,21 @@
     <!-- 读取联系人的权限 -->
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
-    <permission android:name="com.peng.yunluo.action.broadcast">
-    </permission>
-    <uses-permission android:name="com.peng.yunluo.action.broadcast"/>
-    <permission android:name="com.peng.remote.share">
-    </permission>
-    <uses-permission android:name="com.peng.remote.share"/>
+    <permission android:name="com.peng.yunluo.action.broadcast"></permission>
 
-    <permission android:name="com.peng.yunluo.app.permission"/>
-    <uses-permission android:name="com.peng.yunluo.app.permission"/>
+    <uses-permission android:name="com.peng.yunluo.action.broadcast" />
 
-    <!--写入外部存储的权限-->
+    <permission android:name="com.peng.remote.share"></permission>
+
+    <uses-permission android:name="com.peng.remote.share" />
+
+    <permission android:name="com.peng.yunluo.app.permission" />
+
+    <uses-permission android:name="com.peng.yunluo.app.permission" />
+
+    <!-- 写入外部存储的权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:name=".MyApp"
@@ -29,6 +32,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -51,25 +55,24 @@
                     android:scheme="peng" />
             </intent-filter>
         </activity>
-        <activity android:name=".CanvasActivity" >
+        <activity android:name=".CanvasActivity">
             <intent-filter>
                 <action android:name="com.peng.yunluo.callcanvas" />
-                <category android:name="android.intent.category.DEFAULT"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <service android:name="service.MyService" />
 
         <activity android:name=".SecondActivity" />
-        <activity android:name=".ThridActivity"></activity>
+        <activity android:name=".ThridActivity" />
 
-        <receiver android:name="broadcast.MyBroadcastReceiver"
-            android:permission="com.peng.yunluo.action.broadcast">
+        <receiver
+            android:name="broadcast.MyBroadcastReceiver"
+            android:permission="com.peng.yunluo.action.broadcast"></receiver>
 
-
-        </receiver>
-
-
+        <activity android:name=".URLActivity"></activity>
     </application>
 
 </manifest>
